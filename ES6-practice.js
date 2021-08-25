@@ -41,8 +41,35 @@ const outPut = numbers.map(number => number * 5);
 // console.log(outPut);
 
 
-// filter to find the odd numbers from a array 
+// filter to find the odd numbers from an array 
 
 const oddNumbers = numbers.filter(number => number % 2 == 1);
 
-console.log(oddNumbers);
+// console.log(oddNumbers);
+
+// find the object which price is 5000 in an array 
+
+const phones = [
+    { name: 'samsumg S20', price: 51000 },
+    { name: 'iphone 12', price: 50000 },
+    { name: 'nokia', price: 5000 }
+];
+const afforablePhone = phones.find(phone => phone.price == 5000);
+// console.log(afforablePhone);
+
+// declare a object proparty as a variable by destructuring 
+const aRandomObject = { x: 2, y: 4, z: 5, a: 9 };
+const { x } = aRandomObject;
+const newNumber = x + 5;
+// console.log(newNumber);
+
+// destructuring of an array
+const aRandomArray = [54, 35, 89, 54, 82];
+
+const [a, b, c] = aRandomArray;
+const three = c;
+// console.log(three);
+
+const aRandomFunction = (x, y, z = 7) => x + y + z;
+console.log(aRandomFunction(7, 7));
+
