@@ -32,10 +32,17 @@ const multipleLineArrowFunction = (x, y) => {
     const multiple = sum1 * sum2;
     return multiple;
 };
-console.log(multipleLineArrowFunction(5, 5));
-// console.log(object);
+// console.log(multipleLineArrowFunction(5, 5));
+
 
 // map in an array 
 const numbers = [5, 6, 7, 8, 9, 21, 34, 41, 23, 65, 78];
 const outPut = numbers.map(number => number * 5);
 // console.log(outPut);
+
+
+// filter to find the odd numbers from a array 
+
+const oddNumbers = numbers.filter(number => number % 2 == 1);
+
+console.log(oddNumbers);
